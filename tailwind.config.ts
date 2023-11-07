@@ -14,7 +14,7 @@ export default <Partial<Config>>{
             display: ['group-hover'],
             screens: {
                 mobile: { min: '0px', max: '320px' },
-                tablet: { min: '320px', max: '768px' },
+                tablet: { min: '321px', max: '768px' },
                 desktop: { min: '768px' },
             },
             transitionProperty: {
