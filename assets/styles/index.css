@@ -1,0 +1,8 @@
+@import url('./font.css');
+@import url('./text.css');
+@tailwind utilities;
+
+html {
+    font-size: 14px;
+    font-family: 'Roboto-Regular', Arial, Monospace, Serif, Sans-serif;
+}
