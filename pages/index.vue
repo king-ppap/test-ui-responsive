@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="header-1">ATHLETS</h1>
+        <h1 class="header-1 mb-[11px]">ATHLETS</h1>
         <div class="w-full flex flex-col items-center">
             <div class="relative w-[218px] flex justify-center">
                 <svg
