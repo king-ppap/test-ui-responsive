@@ -98,35 +98,7 @@
                 </svg>
             </div>
             <div class="bg-[#F5F4F9] pt-[72px] px-[18px] pb-[30px] mt-[-55px]">
-                <div class="flex">
-                    <div class="flex flex-col justify-center mr-[10px]">
-                        <p class="tracking-[1.5px]">02</p>
-                        <div
-                            class="ml-auto mt-[2px] rounded-[2.5px] w-[17px] h-[4px] bg-[#603EBE]"
-                        ></div>
-                    </div>
-                    <h2 class="header-2">COLLABORATION</h2>
-                </div>
-                <p>
-                    Work with other student athletes to increase visability.
-                    When you share and like other players videos it will
-                    increase your visability as a player. This is the team work
-                    aspect to Surface 1.
-                </p>
-                <div class="flex justify-center">
-                    <svg
-                        class="mt-[29px]"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="54"
-                        height="10"
-                        viewBox="0 0 54 10"
-                        fill="none"
-                    >
-                        <circle cx="5" cy="5" r="5" fill="#D8D8D8" />
-                        <circle cx="27" cy="5" r="5" fill="#5C3CAF" />
-                        <circle cx="49" cy="5" r="5" fill="#D8D8D8" />
-                    </svg>
-                </div>
+                <Carousel :list="listATHLETS" />
             </div>
         </div>
     </div>
@@ -134,6 +106,38 @@
         <h1 class="header-1">PLAYERS</h1>
     </div>
 </template>
+
+<script lang="ts">
+export default {
+    data(vm) {
+        const data: {
+            listATHLETS: {
+                titile: string;
+                message: string;
+            }[];
+        } = {
+            listATHLETS: [
+                {
+                    titile: 'CONNECTION',
+                    message:
+                        'Connect with coaches directly, you can ping coaches to view profile.',
+                },
+                {
+                    titile: 'COLLABORATION',
+                    message:
+                        'Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.',
+                },
+                {
+                    titile: 'GROWTH',
+                    message:
+                        'Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc',
+                },
+            ],
+        };
+        return data;
+    },
+};
+</script>
 
 <style>
 .header-1 {
