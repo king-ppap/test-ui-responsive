@@ -37,11 +37,6 @@
 </template>
 
 <script lang="ts">
-interface Data {
-    title: string;
-    message: string;
-}
-
 export default {
     setup() {
         const carousel = ref(null);
@@ -62,7 +57,7 @@ export default {
     },
     computed: {
         listT() {
-            return <Data[]>this.list;
+            return <DataCarousel[]>this.list;
         },
         widthPaginator() {
             return 27 * (this.listT.length - 1);
@@ -85,3 +80,9 @@ export default {
     },
 };
 </script>
+
+<style>
+.header-2 {
+    @apply mobile:text-[28px] tablet:text-[36px] desktop:text-[36px] text-[#C2C2C2] tracking-[1.5px];
+}
+</style>
