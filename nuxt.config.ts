@@ -7,6 +7,6 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
-    modules: ['@nuxtjs/tailwindcss'],
+    modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
     css: ['~/assets/styles/index.css'],
 });
