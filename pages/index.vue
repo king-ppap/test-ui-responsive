@@ -1,10 +1,10 @@
 <template>
     <div>
-        <h1 class="header-1 mb-[11px]">ATHLETS</h1>
+        <h1 class="header-1 mb-[11px] mobile:px-[18px]">ATHLETS</h1>
         <div class="w-full flex flex-col items-center">
             <div class="relative w-[218px] flex justify-center">
                 <img
-                    class="tablet:hidden desktop:hidden min-w-[200px] z-10"
+                    class="tablet:hidden desktop:hidden w-[200px] z-10"
                     src="@/assets/images/footballer-graphic-mobile.png"
                     alt="footballer"
                 />
@@ -17,17 +17,19 @@
         </div>
     </div>
     <div>
-        <h1 class="header-1">PLAYERS</h1>
+        <h1 class="header-1 mobile:mt-[19px] mobile:mb-[23px] mobile:px-[18px]">
+            PLAYERS
+        </h1>
         <div class="w-full flex flex-col items-center">
             <div class="relative w-[302px] h-[250px] flex justify-center">
                 <img
-                    class="tablet:hidden desktop:hidden min-w-[302px] z-10"
+                    class="tablet:hidden desktop:hidden w-[302px] z-10"
                     src="@/assets/images/basketball-graphic-mobile.png"
                     alt="footballer"
                 />
             </div>
             <div
-                class="tablet:hidden desktop:hidden bg-[#F5F4F9] pt-[72px] px-[18px] pb-[30px] mt-[-55px]"
+                class="tablet:hidden desktop:hidden bg-[#F5F4F9] pt-[72px] px-[18px] pb-[30px] mt-[-35px]"
             >
                 <Carousel :list="listPLAYERS" />
             </div>
