@@ -11,10 +11,10 @@
                 class="desktop:hidden absolute top-[71px] w-[200px] z-[1]"
                 :name="'/assets/svg/footballer-graphic-tablet.svg'"
             />
+            <!-- :style="`left: calc(0.525 * 100vw - 853px)`" -->
             <img
                 alt="footballer-graphic-desktop"
-                :style="`left: calc(0.525 * 100vw - 853px)`"
-                class="mobile:hidden tablet:hidden absolute w-[678px] top-[50px] left-[9.1145833vw]"
+                class="mobile:hidden tablet:hidden absolute w-[678px] top-[50px] right-[55.57291667vw]"
                 src="~/assets/images/footballer-graphic-desktop.png"
             />
             <ContentList
