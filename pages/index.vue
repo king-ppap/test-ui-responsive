@@ -7,10 +7,14 @@
         </h1>
         <div class="mobile:hidden desktop:hidden">
             <AppSvgs
+                :style="`left: calc(0.37890625 * 100vw - 291px)`"
                 class="absolute top-[71px] w-[200px] z-[1]"
                 :name="'/assets/svg/footballer-graphic-tablet.svg'"
             />
-            <ContentList :list="listATHLETS"></ContentList>
+            <ContentList
+                :list="listATHLETS"
+                custom-class="pl-[37.890625vw] "
+            ></ContentList>
         </div>
         <div
             class="tablet:hidden desktop:hidden w-full flex flex-col items-center"
@@ -26,12 +30,22 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="tablet:relative">
         <h1
-            class="header-1 mobile:mt-[19px] mobile:mb-[23px] mobile:px-[18px] tablet:pl-[30px]"
+            class="header-1 mobile:mt-[19px] mobile:mb-[23px] mobile:px-[18px] tablet:pl-[30px] tablet:pt-[50px] tablet:pb-[15px]"
         >
             PLAYERS
         </h1>
+        <AppSvgs
+            class="mobile:hidden desktop:hidden absolute top-[31px] w-[56.90104167vw] ml-[43.09895833vw] z-[1] overflow-hidden"
+            :name="'/assets/svg/basketball-graphic-tablet.svg'"
+        />
+        <div class="mobile:hidden desktop:hidden">
+            <ContentList
+                :list="listPLAYERS"
+                custom-class="pl-[30px] pr-[39.84375vw]"
+            ></ContentList>
+        </div>
         <div
             class="tablet:hidden desktop:hidden w-full flex flex-col items-center"
         >
@@ -81,13 +95,13 @@ export default {
                     bgColor: '#fff',
                     title: 'CONNECTION',
                     message:
-                        'Connect with coaches directly, you can ping coaches to view profile.',
+                        'Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.',
                 },
                 {
                     bgColor: '#F5F4F9',
                     title: 'COLLABORATION',
                     message:
-                        'Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.',
+                        'Work with recruiter to increase your chances of findingtalented athlete.',
                 },
                 {
                     bgColor: '#090C35',
@@ -95,7 +109,7 @@ export default {
                     indexTextColor: '#8765DD',
                     title: 'GROWTH',
                     message:
-                        'Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc',
+                        'Save your time, recruit proper athlets for your team.',
                 },
             ],
         };

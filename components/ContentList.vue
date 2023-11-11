@@ -1,7 +1,8 @@
 <template>
     <div
         v-for="(item, index) in listT"
-        class="pl-[37.890625vw] pr-[30px] py-[30px]"
+        class="pr-[30px] py-[30px]"
+        :class="customClass"
         :style="`background-color: ${item.bgColor};`"
     >
         <div class="flex z-[999]">
@@ -37,8 +38,8 @@ export default {
             type: Array,
             default: [],
         },
+        customClass: String,
     },
-
     computed: {
         listT(): ListData[] {
             return <ListData[]>(<unknown>this.list);
