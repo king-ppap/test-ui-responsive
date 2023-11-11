@@ -4,7 +4,7 @@
         class="pl-[37.890625vw] pr-[30px] py-[30px]"
         :style="`background-color: ${item.bgColor};`"
     >
-        <div class="flex">
+        <div class="flex z-[999]">
             <div class="w-[23.042px] flex flex-col justify-center mr-[10px]">
                 <p
                     class="text-[18px] tracking-[1.5px]"
@@ -17,8 +17,16 @@
                     :style="`background-color: ${item.indexUnderlineColor};`"
                 ></div>
             </div>
-            <h2 class="header-2">{{ item.title }}</h2>
+            <h2 class="header-2">
+                {{ item.title }}
+            </h2>
         </div>
+        <p
+            class="text-[18px] pt-[20px] leading-[28px]"
+            :style="`color: ${item.indexUnderlineColor};`"
+        >
+            {{ item.message }}
+        </p>
     </div>
 </template>
 

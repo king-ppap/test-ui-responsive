@@ -1,11 +1,15 @@
 <template>
     <div>
         <h1
-            class="header-1 mb-[11px] mobile:px-[18px] tablet:pt-[50px] tablet:pl-[37.890625vw]"
+            class="header-1 mobile:mb-[11px] mobile:px-[18px] tablet:pt-[50px] tablet:pl-[37.890625vw] tablet:pb-[15px]"
         >
             ATHLETS
         </h1>
         <div class="mobile:hidden desktop:hidden">
+            <AppSvgs
+                class="absolute top-[71px] w-[200px] z-[1]"
+                :name="'/assets/svg/footballer-graphic-tablet.svg'"
+            />
             <ContentList :list="listATHLETS"></ContentList>
         </div>
         <div
@@ -24,7 +28,7 @@
     </div>
     <div>
         <h1
-            class="header-1 mobile:mt-[19px] mobile:mb-[23px] mobile:px-[18px] tablet:pl-[37.890625vw]"
+            class="header-1 mobile:mt-[19px] mobile:mb-[23px] mobile:px-[18px] tablet:pl-[30px]"
         >
             PLAYERS
         </h1>
