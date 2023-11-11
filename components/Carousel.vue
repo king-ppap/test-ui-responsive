@@ -57,7 +57,7 @@ export default {
     },
     computed: {
         listT() {
-            return <DataCarousel[]>this.list;
+            return <ListData[]>this.list;
         },
         widthPaginator() {
             return 27 * (this.listT.length - 1);
@@ -81,7 +81,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .header-2 {
     @apply mobile:text-[28px] tablet:text-[36px] desktop:text-[36px] text-[#C2C2C2] tracking-[1.5px];
 }

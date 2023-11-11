@@ -2,12 +2,12 @@ import type { Config } from 'tailwindcss';
 
 export default <Partial<Config>>{
     content: [
-        "./components/**/*.{js,vue,ts}",
-        "./layouts/**/*.vue",
-        "./pages/**/*.vue",
-        "./plugins/**/*.{js,ts}",
-        "./app.vue",
-        "./error.vue",
+        './components/**/*.{js,vue,ts}',
+        './layouts/**/*.vue',
+        './pages/**/*.vue',
+        './plugins/**/*.{js,ts}',
+        './app.vue',
+        './error.vue',
     ],
     theme: {
         extend: {
@@ -15,7 +15,7 @@ export default <Partial<Config>>{
             screens: {
                 mobile: { min: '0px', max: '320px' },
                 tablet: { min: '321px', max: '768px' },
-                desktop: { min: '768px' },
+                desktop: { min: '769px' },
             },
             transitionProperty: {
                 width: 'width',
@@ -28,11 +28,10 @@ export default <Partial<Config>>{
                 droptable: '0px 0px 20px 4px rgba(132, 132, 132, 0.07)',
             },
             fontFamily: {
-                'roboto': 'Roboto',
+                roboto: 'Roboto',
             },
-            colors: {
-            },
+            colors: {},
         },
     },
     plugins: [],
-}
+};
