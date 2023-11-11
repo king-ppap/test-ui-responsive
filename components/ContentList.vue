@@ -7,10 +7,7 @@
     >
         <div class="flex z-[999]">
             <div class="w-[23.042px] flex flex-col justify-center mr-[10px]">
-                <p
-                    class="text-[18px] tracking-[1.5px]"
-                    :style="`color: ${item.indexTextColor}`"
-                >
+                <p class="text-[18px] tracking-[1.5px]" :style="`color: ${item.indexTextColor}`">
                     {{ String(index + 1).padStart(2, '0') }}
                 </p>
                 <div
@@ -22,10 +19,7 @@
                 {{ item.title }}
             </h2>
         </div>
-        <p
-            class="tablet:text-[18px] desktop:text-[20px] pt-[20px] leading-[28px]"
-            :style="`color: ${item.indexUnderlineColor};`"
-        >
+        <p class="tablet:text-[18px] desktop:text-[20px] pt-[20px] leading-[28px]" :style="`color: ${item.indexUnderlineColor};`">
             {{ item.message }}
         </p>
     </div>

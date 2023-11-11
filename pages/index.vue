@@ -16,19 +16,11 @@
                 class="mobile:hidden tablet:hidden absolute w-[678px] top-[50px] right-[55.57291667vw]"
                 src="~/assets/images/footballer-graphic-desktop.png"
             />
-            <ContentList
-                :list="listATHLETS"
-                custom-class="tablet:pl-[37.890625vw] desktop:pl-[52.5vw]"
-            ></ContentList>
+            <ContentList :list="listATHLETS" custom-class="tablet:pl-[37.890625vw] desktop:pl-[52.5vw]"></ContentList>
         </div>
-        <div
-            class="tablet:hidden desktop:hidden w-full flex flex-col items-center"
-        >
+        <div class="tablet:hidden desktop:hidden w-full flex flex-col items-center">
             <div class="relative w-[218px] flex justify-center">
-                <AppSvgs
-                    class="w-[200px] z-10"
-                    :name="'/assets/svg/footballer-graphic-mobile.svg'"
-                />
+                <AppSvgs class="w-[200px] z-10" :name="'/assets/svg/footballer-graphic-mobile.svg'" />
             </div>
             <div class="bg-[#F5F4F9] pt-[72px] px-[18px] pb-[30px] mt-[-55px]">
                 <Carousel :list="listATHLETS" />
@@ -55,14 +47,9 @@
                 custom-class="tablet:pl-[30px] tablet:pr-[39.84375vw] desktop:pl-[16.71875vw] desktop:pr-[45.88541667vw]"
             ></ContentList>
         </div>
-        <div
-            class="tablet:hidden desktop:hidden w-full flex flex-col items-center"
-        >
+        <div class="tablet:hidden desktop:hidden w-full flex flex-col items-center">
             <div class="relative w-[94.375vw] h-[250px] flex justify-center">
-                <AppSvgs
-                    class="w-[94.375vw] z-10 overflow-hidden"
-                    :name="'/assets/svg/basketball-graphic-mobile.svg'"
-                />
+                <AppSvgs class="w-[94.375vw] z-10 overflow-hidden" :name="'/assets/svg/basketball-graphic-mobile.svg'" />
             </div>
             <div class="bg-[#F5F4F9] pt-[72px] px-[18px] pb-[30px] mt-[-35px]">
                 <Carousel :list="listPLAYERS" />
@@ -82,8 +69,7 @@ export default {
                 {
                     bgColor: '#fff',
                     title: 'CONNECTION',
-                    message:
-                        'Connect with coaches directly, you can ping coaches to view profile.',
+                    message: 'Connect with coaches directly, you can ping coaches to view profile.',
                 },
                 {
                     bgColor: '#F5F4F9',
@@ -109,16 +95,14 @@ export default {
                 {
                     bgColor: '#F5F4F9',
                     title: 'COLLABORATION',
-                    message:
-                        'Work with recruiter to increase your chances of findingtalented athlete.',
+                    message: 'Work with recruiter to increase your chances of findingtalented athlete.',
                 },
                 {
                     bgColor: '#090C35',
                     indexUnderlineColor: '#fff',
                     indexTextColor: '#8765DD',
                     title: 'GROWTH',
-                    message:
-                        'Save your time, recruit proper athlets for your team.',
+                    message: 'Save your time, recruit proper athlets for your team.',
                 },
             ],
         };
