@@ -79,6 +79,8 @@ export default {
                 } else if (this.direction === 'right') {
                     if (this.index > 0) {
                         this.index -= 1;
+                    } else if (this.isLoop) {
+                        this.index = this.listT.length - 1;
                     }
                 }
             }
