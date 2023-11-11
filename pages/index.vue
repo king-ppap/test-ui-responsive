@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1
-            class="header-1 mobile:mb-[11px] mobile:px-[18px] tablet:pt-[50px] tablet:pl-[37.890625vw] tablet:pb-[15px] desktop:pt-[100px] desktop:pl-[52.5vw]"
+            class="header-1 mobile:mt-[20px] mobile:mb-[11px] mobile:px-[18px] tablet:pt-[50px] tablet:pl-[37.890625vw] tablet:pb-[15px] desktop:pt-[100px] desktop:pl-[52.5vw]"
         >
             ATHLETS
         </h1>
