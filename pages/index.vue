@@ -13,6 +13,7 @@
             />
             <img
                 alt="footballer-graphic-desktop"
+                :style="`left: calc(0.525 * 100vw - 853px)`"
                 class="mobile:hidden tablet:hidden absolute w-[678px] top-[50px] left-[9.1145833vw]"
                 src="~/assets/images/footballer-graphic-desktop.png"
             />
@@ -58,9 +59,9 @@
         <div
             class="tablet:hidden desktop:hidden w-full flex flex-col items-center"
         >
-            <div class="relative w-[302px] h-[250px] flex justify-center">
+            <div class="relative w-[94.375vw] h-[250px] flex justify-center">
                 <AppSvgs
-                    class="w-[302px] z-10"
+                    class="w-[94.375vw] z-10 overflow-hidden"
                     :name="'/assets/svg/basketball-graphic-mobile.svg'"
                 />
             </div>
