@@ -1,7 +1,7 @@
 <template>
     <div
         v-for="(item, index) in listT"
-        class="pr-[30px] py-[30px]"
+        class="tablet:pr-[30px] tablet:py-[30px] desktop:pr-[10.15625vw] desktop:py-[60px]"
         :class="customClass"
         :style="`background-color: ${item.bgColor};`"
     >
@@ -23,7 +23,7 @@
             </h2>
         </div>
         <p
-            class="text-[18px] pt-[20px] leading-[28px]"
+            class="tablet:text-[18px] desktop:text-[20px] pt-[20px] leading-[28px]"
             :style="`color: ${item.indexUnderlineColor};`"
         >
             {{ item.message }}
