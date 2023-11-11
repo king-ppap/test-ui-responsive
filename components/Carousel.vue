@@ -2,7 +2,7 @@
     <div ref="carousel">
         <div class="flex">
             <div class="flex flex-col justify-center mr-[10px]">
-                <p class="tracking-[1.5px]">
+                <p class="text-[14px] tracking-[1.5px]">
                     {{ String(index + 1).padStart(2, '0') }}
                 </p>
                 <div class="ml-auto mt-[2px] rounded-[2.5px] w-[17px] h-[4px] bg-[#603EBE]"></div>
