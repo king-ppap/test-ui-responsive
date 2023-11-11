@@ -8,7 +8,7 @@
         <div class="mobile:hidden">
             <AppSvgs
                 :style="`left: calc(0.37890625 * 100vw - 291px)`"
-                class="desktop:hidden absolute top-[71px] w-[200px] z-[1]"
+                class="desktop:hidden absolute top-[71px] rigth-[53.515625vw] w-[200px] z-[1]"
                 :name="'/assets/svg/footballer-graphic-tablet.svg'"
             />
             <img

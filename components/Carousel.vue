@@ -46,6 +46,10 @@ export default {
     },
     props: {
         list: Object,
+        isLoop: {
+            type: Boolean,
+            default: true,
+        },
     },
     data() {
         const data: {
@@ -69,6 +73,8 @@ export default {
                 if (this.direction === 'left') {
                     if (this.index < this.listT.length - 1) {
                         this.index += 1;
+                    } else if (this.isLoop) {
+                        this.index = 0;
                     }
                 } else if (this.direction === 'right') {
                     if (this.index > 0) {
