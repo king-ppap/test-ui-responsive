@@ -6,12 +6,12 @@
         :style="`background-color: ${item.bgColor};`"
     >
         <div class="flex z-[999]">
-            <div class="w-[23.042px] flex flex-col justify-center mr-[10px]">
+            <div class="flex flex-col justify-center mr-[10px]">
                 <p class="text-[18px] tracking-[1.5px]" :style="`color: ${item.indexTextColor}`">
                     {{ String(index + 1).padStart(2, '0') }}
                 </p>
                 <div
-                    class="mt-[2px] rounded-[2.5px] w-[22.04px] h-[5px] bg-[#603EBE]"
+                    class="ml-[1px] mr-[2px] mt-[4px] rounded-[2.5px] w-[22px] h-[5px] bg-[#603EBE]"
                     :style="`background-color: ${item.indexUnderlineColor};`"
                 ></div>
             </div>

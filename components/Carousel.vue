@@ -5,7 +5,7 @@
                 <p class="text-[14px] tracking-[1.5px]">
                     {{ String(index + 1).padStart(2, '0') }}
                 </p>
-                <div class="ml-auto mt-[2px] rounded-[2.5px] w-[17px] h-[4px] bg-[#603EBE]"></div>
+                <div class="ml-[0.99px] mr-[0.25px] mt-[2px] rounded-[2.5px] w-[17px] h-[4px] bg-[#603EBE]"></div>
             </div>
             <h2 class="header-2">{{ listT[index].title }}</h2>
         </div>
