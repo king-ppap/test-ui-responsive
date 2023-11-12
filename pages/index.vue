@@ -55,7 +55,7 @@
                         :name="'/assets/svg/basketball-graphic-mobile.svg'"
                     />
                 </div>
-                <div class="bg-[#F5F4F9] pt-[72px] px-[18px] pb-[30px] mt-[-35px]">
+                <div class="bg-[#F5F4F9] pt-[72px] px-[18px] pb-[30px] mt-[-35px] w-full">
                     <Carousel :list="listPLAYERS" />
                 </div>
             </div>
