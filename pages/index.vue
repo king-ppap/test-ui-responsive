@@ -49,8 +49,11 @@
                 ></ContentList>
             </div>
             <div class="tablet:hidden desktop:hidden w-full flex flex-col items-center">
-                <div class="relative w-[94.375vw] h-[250px] flex justify-center">
-                    <AppSvgs class="w-[94.375vw] z-10 overflow-hidden" :name="'/assets/svg/basketball-graphic-mobile.svg'" />
+                <div class="relative w-full flex justify-center items-center">
+                    <AppSvgs
+                        class="w-[94.375vw] flex justify-center items-center z-10 overflow-hidden"
+                        :name="'/assets/svg/basketball-graphic-mobile.svg'"
+                    />
                 </div>
                 <div class="bg-[#F5F4F9] pt-[72px] px-[18px] pb-[30px] mt-[-35px]">
                     <Carousel :list="listPLAYERS" />
